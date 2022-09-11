@@ -1,0 +1,93 @@
+* { /*for links and lists*/
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    height: 100%; /*it's making the footer to go down*/
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    /*change*/
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100%; /*it's making the footer to go down*/
+}
+  
+/*==========start-part==========*/
+
+.header {
+    height: 72px;
+    background: darkmagenta;
+    color: white;
+    /*change*/
+    font-size: 32px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+  
+/*==========end-part==========*/
+
+.footer {
+    height: 72px;
+    background: #eee;
+    color: darkmagenta;
+    /*change*/
+    margin-top: auto; /*it's making the footer to go down*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*==========middle-part==========*/
+
+.sidebar {
+    width: 300px;
+    background: royalblue;
+    /*change*/
+    display: flex;
+    flex: 1 0 3%;
+    padding: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+a {
+    color: white;
+    font-size: 24px;
+}
+
+.midlle-container {
+    display: flex;
+    flex: 1;
+}
+
+.card-container {
+    display: flex;
+    gap: 32px;
+    flex: 4;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin: 32px;
+}
+
+.card {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    /*change*/
+    display: flex;
+    padding: 32px;
+    flex: 0 1 20%;
+}
